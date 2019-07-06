@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "flamelink-starter",
+      "public": "dist/flamelink-starter",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}

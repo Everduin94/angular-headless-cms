@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "flamelink-starter": {
+      "hosting": {
+        "flamelink-starter": [
+          "flamelink-starter"
+        ]
+      }
+    }
+  }
+}
