@@ -6,9 +6,10 @@ import * as marked from 'marked';
   name: 'mdToHtml'
 })
 export class MdToHtmlPipe implements PipeTransform {
-
+  /* OPTIONAL 3.1 */ 
   transform(value: any, args?: any): any {
     return marked(value);
   }
+  /* END OPTIONAL 3.1 */ 
 
 }

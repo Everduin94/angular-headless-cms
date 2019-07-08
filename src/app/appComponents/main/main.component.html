@@ -1,5 +1,14 @@
-<p>
-  main works!
-</p>
-<a routerLink="examples">Load Examples</a>
-<router-outlet></router-outlet>
+<!-- BEGIN 1.2 -->
+<div class="container">
+  <ul *ngIf="obs$ | async as blogPosts">
+    <li class="item" [ngClass]="{'show': show}" *ngFor="let blogPost of blogPosts" (click)="onClick(blogPost.sys.id)">
+        <h2 class="header">{{blogPost.fields.title}}</h2>
+        <h4>
+          <span class="date">{{blogPost.sys.createdAt | date:'fullDate'}}</span> | 
+          <span class="time">{{blogPost.fields.readTime}} min read</span>
+        </h4>
+        <h3>{{blogPost.fields.description}}</h3>
+    </li>
+  </ul>
+</div>
+<!-- END 1.2 -->

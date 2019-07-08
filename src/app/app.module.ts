@@ -16,6 +16,8 @@ import { LoginComponent } from './appComponents/login/login.component';
 import { ShellComponent } from './appComponents/header/shell.component';
 import { MainComponent } from './appComponents/main/main.component';
 import { MdToHtmlPipe } from './pipes/md-to-html.pipe';
+import { PostComponent } from './featureComponents/post/post.component';
+import { TruncatePipe } from './pipes/truncate.pipe';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { MdToHtmlPipe } from './pipes/md-to-html.pipe';
     LoginComponent,
     ShellComponent,
     MainComponent,
-    MdToHtmlPipe
+    MdToHtmlPipe,
+    PostComponent,
+    TruncatePipe
   ],
   imports: [
     BrowserModule,

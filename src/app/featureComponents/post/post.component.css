@@ -1,0 +1,43 @@
+:host {
+    font-size: 2rem;
+    line-height: 3rem;
+    height: 75vh;
+    width: 50vw;
+    word-wrap: break-word;
+    border-radius: 4px;
+    list-style: none;
+    overflow-y: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    overflow-x: hidden;
+    transform: translate(-50%, -50%);
+}
+
+:host::-webkit-scrollbar {
+    width: 5px;
+}
+
+:host::-webkit-scrollbar-thumb {
+    background: #666;
+}
+
+.container {
+    margin-bottom: 100px;
+    transition: all .65s ease-out;
+    opacity: 0;
+}
+
+.container.show {
+    opacity: 1;
+}
+
+.published {
+    font-size: 1.5rem;
+}
+
+a {
+    color: #008DD5;
+    text-decoration: none;
+}
+

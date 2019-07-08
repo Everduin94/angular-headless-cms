@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ContentfulService } from 'src/app/services/contentful.service';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-main',
@@ -7,9 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
 
-  constructor() { }
+  show = false;
+  obs$;
+
+  constructor(private cs: ContentfulService, private router: Router) { }
 
   ngOnInit() {
+    this.obs$ = this.cs.getBlogPosts();
+    setTimeout(() => {
+      this.show = true;
+    }, 50);
+  }
+
+  onClick(id) {
+    console.log(id)
+    this.router.navigate(['/post', id])
   }
 
 }

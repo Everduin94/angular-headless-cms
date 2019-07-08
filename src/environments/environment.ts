@@ -11,8 +11,19 @@ export const environment = {
     projectId: '<your-project-id>',
     storageBucket: '<your-storage-bucket>',
     messagingSenderId: '<your-messaging-sender-id>'
+  },
+
+  /* TODO: Enter Configuration*/
+  contentful_config: {
+    space: '<YOUR-SPACE-ID>',
+    accessToken: '<YOUR-CONTENT-DELIVERY-TOKEN>',
+  
+    contentTypeIds: {
+      blogPost: 'blogPost' // EXAMPLE
+    }
   }
 };
+
 
 /*
  * For easier debugging in development mode, you can import the following file

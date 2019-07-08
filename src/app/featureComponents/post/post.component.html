@@ -1,0 +1,8 @@
+<!-- BEGIN 2.3 -->
+<div class="container" [ngClass]="{'show': show}" *ngIf="obs$ | async as post" >
+  <h2>{{post.title}}</h2>
+  <h3>{{post.description}}</h3>
+  <p class="published" *ngIf="post.link as link">Originally published at: <a target="_blank" rel="noopener noreferrer" [href]="link">{{link | truncate}}</a></p>
+  <div [innerHtml]="post.body | mdToHtml"></div>
+</div>
+<!-- END 2.3 -->

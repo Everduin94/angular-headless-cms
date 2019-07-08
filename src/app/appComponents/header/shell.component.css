@@ -1,0 +1,12 @@
+.hero {
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    font-size: 4rem;
+    font-family: 'Permanent Marker', cursive;
+    color: #008DD5;
+}
+
+a {
+    color: #008DD5;
+    text-decoration-line: none;
+}
